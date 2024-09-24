@@ -5,7 +5,7 @@
 
 /*
 # Data source to retrieve the EC2 instance
-data "aws_ec2_instance" "web_server" {
+data "aws_instance" "web_server" {
   filter {
     name   = "tag:Name"
     values = ["web_server"]
