@@ -1,4 +1,4 @@
-# Terraform Debug
+# Terraform Plan
 
 The Terraform plan command generates a detailed plan of the changes that will be applied to your infrastructure. This plan includes:
 
