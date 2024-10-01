@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Terraform Plan output & import
+=======
+# Terraform Plan
+>>>>>>> ae5e418c619b704ba19ec94128874fcd34891370
 
 The Terraform plan command generates a detailed plan of the changes that will be applied to your infrastructure. This plan includes:
 
