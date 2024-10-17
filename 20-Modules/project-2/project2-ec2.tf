@@ -1,3 +1,4 @@
+#/*
 module "vpc" {
   source = "terraform-aws-modules/vpc/aws"
 
@@ -17,21 +18,26 @@ module "vpc" {
   }
 }
 
-#module "ec2_instance" {
-#  source  = "terraform-aws-modules/ec2-instance/aws"
-#  version = "~> 3.0"
-#
-#  name = "single-instance"
-#
-#  ami                    = "ami-ebd02392"
-#  instance_type          = "t2.micro"
-#  key_name               = "user1"
-#  monitoring             = true
-#  vpc_security_group_ids = [module.vpc.default_security_group_id]
-#  subnet_id              = module.vpc.public_subnets
-#
-#  tags = {
-#    Terraform   = "true"
-#    Environment = "dev"
-#  }
-#}
+#*/
+
+/*
+module "ec2_instance" {
+  source  = "terraform-aws-modules/ec2-instance/aws"
+  version = "~> 3.0"
+
+  name = "single-instance"
+
+  ami                    = "ami-03489489283928"
+  instance_type          = "t2.micro"
+  key_name               = "wawa-keypair"
+  monitoring             = true
+  vpc_security_group_ids = [module.vpc.default_security_group_id]
+  subnet_id              = [module.vpc.public_subnets]
+
+  tags = {
+    Terraform   = "true"
+    Environment = "dev"
+  }
+}
+
+*/

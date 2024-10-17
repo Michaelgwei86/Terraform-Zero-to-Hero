@@ -4,7 +4,7 @@ provider "aws" {
 
 
 module "mytest" {
-  source = "../modules/ec2"
+  source = "./modules/ec2"
 
   ami_id        = var.ami_id
   ec2_name      = var.ec2_name
@@ -17,6 +17,4 @@ module "mys3" {
   bucket_name = var.bucket_name
 }
 */
-
-
 
